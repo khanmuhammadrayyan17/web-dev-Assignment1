@@ -54,6 +54,7 @@ i
 }
 #About
 {
+    background-color: white;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -178,8 +179,8 @@ i
     width: 380px;
     background-color: black;
     display: none;
-    justify-content: left;
     align-items: center;
+    justify-content: space-between;
 }
 
 #popup_text
@@ -189,6 +190,45 @@ i
 }
 
 #icon:hover
+{
+    cursor: pointer;
+}
+
+#popup2
+{
+    border-radius: 5px;
+    color: white;
+    z-index: 11;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-190px,-190px);
+    height: 420px;
+    width: 380px;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+}
+
+#popup2_cross
+{
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+#popup2_text
+{
+    border-radius: 5px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cross2:hover
 {
     cursor: pointer;
 }
