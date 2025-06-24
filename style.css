@@ -1,5 +1,6 @@
 body
 {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -26,6 +27,7 @@ body
     align-items: center;
     justify-content: center;
     height: 630px;
+    text-align: center;
 }
 .intro-text
 {
@@ -48,6 +50,10 @@ i
 }
 .container
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     filter: brightness(50%);
     background-image: url("background.jpg");
     background-size: cover;
@@ -60,13 +66,13 @@ i
     justify-content: center;
     align-items: center;
     gap: 50px;
-    height: 610px;
+    min-height: 610px;
 }
 #About-text
 {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
     height: 220px;
 }
 
@@ -116,18 +122,18 @@ i
 
 #projects
 {
-    height: 900px;
+    min-height: 900px;
     background-color:#F0F0F0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    column-gap: 110px;
 }
 
 #row1
 {
-    height: 350px;
+    margin-bottom: 50px;
+    min-height: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -137,7 +143,7 @@ i
 
 #row2
 {
-    height: 350px;
+    min-height: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -231,4 +237,13 @@ i
 #cross2:hover
 {
     cursor: pointer;
+}
+@media screen and (max-width: 1050px){
+    #About-text{
+        text-align: center;
+    }
+    #buttons{
+        display: flex;
+        justify-content: center;
+    }
 }
